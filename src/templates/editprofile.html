@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block title %}Edit Profile{% endblock %}
+{% block content %}
+<h2>Edit profile Page</h2>
+<div class="content">
+    <form action="{{ url_for('editprofile') }}" method="post">
+    <p>Your account details are below:</p>
+    <table>
+        <tr>
+            <td>Username:</td>
+            <td><input type="text" name="username" value = "{{ account['username'] }}" id="username" required></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+
+            <td><input type="password" name="password" value = "{{ account['password'] }}" id="password" required></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" name="email" value="{{ account['email'] }}" id="email" required></td>
+        </tr>
+    </table>
+    <input id="submit" type="submit" name= "submit" value="Update" >
+    </form>
+</div>
+{% endblock %}
