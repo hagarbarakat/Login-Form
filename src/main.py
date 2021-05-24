@@ -11,7 +11,7 @@ app.secret_key = 'Pinkfloyd_1'
 # Enter your database connection details below
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'Pinkfloyd_1'
+app.config['MYSQL_PASSWORD'] = '*****'
 app.config['MYSQL_DB'] = 'pythonlogin'
 app.config['MYSQL_PORT'] = 4000
 
